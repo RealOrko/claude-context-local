@@ -7,7 +7,7 @@ import logging
 from pathlib import Path
 
 # Add the parent directory to the path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from chunking.multi_language_chunker import MultiLanguageChunker
 from embeddings.embedder import CodeEmbedder
@@ -96,7 +96,7 @@ def main():
         
         # Chunk the codebase
         logger.info("Parsing and chunking Python files...")
-        chunks = chunker.chunk_directory()
+        chunks = chunker.chunk_directory(str(directory_path))
         
         if not chunks:
             logger.error("No Python files found or no chunks extracted")

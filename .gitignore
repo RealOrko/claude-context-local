@@ -1,4 +1,5 @@
 .claude/
+.claude_code_search/
 
 ignore/
 # Byte-compiled / optimized / DLL files

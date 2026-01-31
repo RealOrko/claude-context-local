@@ -6,7 +6,7 @@ from dataclasses import dataclass
 import numpy as np
 
 from chunking.code_chunk import CodeChunk
-from embeddings.embedding_models_register import AVAILIABLE_MODELS
+from embeddings.embedding_models_register import AVAILIABLE_MODELS, DEFAULT_MODEL
 from common_utils import get_storage_dir
 
 
@@ -23,7 +23,7 @@ class CodeEmbedder:
 
     def __init__(
         self,
-        model_name: str = "google/embeddinggemma-300m",
+        model_name: str = DEFAULT_MODEL,
         cache_dir: Optional[str] = None,
         device: str = "auto"
     ):
