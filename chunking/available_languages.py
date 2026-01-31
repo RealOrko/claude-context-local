@@ -86,4 +86,10 @@ def get_availiable_language():
     except ImportError:
         logger.debug("tree-sitter-markdown not installed")
 
+    try:
+        import tree_sitter_sindarin as tssindarin
+        res['sindarin'] = Language(tssindarin.language())
+    except ImportError:
+        logger.debug("tree-sitter-sindarin not installed")
+
     return res
