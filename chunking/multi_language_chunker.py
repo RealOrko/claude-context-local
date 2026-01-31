@@ -18,7 +18,7 @@ class MultiLanguageChunker:
     
     # Common large/build/tooling directories to skip during traversal
     DEFAULT_IGNORED_DIRS = {
-        '__pycache__', '.git', '.hg', '.svn',
+        '__pycache__', '.git', '.hg', '.svn', '.sn',
         '.venv', 'venv', 'env', '.env', '.direnv',
         'node_modules', '.pnpm-store', '.yarn',
         '.pytest_cache', '.mypy_cache', '.ruff_cache', '.pytype', '.ipynb_checkpoints',

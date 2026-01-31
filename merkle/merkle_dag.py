@@ -54,7 +54,7 @@ class MerkleDAG:
         self.nodes: Dict[str, MerkleNode] = {}
         self.root_node: Optional[MerkleNode] = None
         self.ignore_patterns: Set[str] = {
-            '__pycache__', '.git', '.hg', '.svn',
+            '__pycache__', '.git', '.hg', '.svn', '.sn',
             '.venv', 'venv', 'env', '.env', '.direnv',
             'node_modules', '.pnpm-store', '.yarn',
             '.pytest_cache', '.mypy_cache', '.ruff_cache', '.pytype', '.ipynb_checkpoints',
